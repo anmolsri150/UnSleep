@@ -253,7 +253,7 @@ def blink_detector(output_textfile,input_video):
                             return retrieved_blinks,int(TOTAL_BLINKS),Counter4blinks,BLINK_READY,skip
                         else:
                             skip=True
-                            print('rejected due to imbalance')
+                            print('rejected due to certain imbalance')
                     else:
                         skip = True
                         print('rejected due to noise,magnitude is {}'.format(Last_Blink.amplitude))
